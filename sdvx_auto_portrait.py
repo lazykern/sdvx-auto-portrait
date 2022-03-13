@@ -152,7 +152,7 @@ def main() -> None:
         print("Launcher closed.")
 
         if START_ORIENTATION == 0:
-            SCREEN.set_portrait_flipped()
+            SCREEN.set_portrait_flipped() if FLIPPED else SCREEN.set_portrait()
 
         time.sleep(5)
 
